@@ -1,0 +1,197 @@
+"#base" "default.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				// assault squad
+				"#Fireteam_Alpha"	// small arms
+				{
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+				}
+				
+				// recon team
+				"#Fireteam_Bravo"
+				{
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+					"麦克雷"				"template_specialist_security"
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"squads"
+			{
+				// assault group
+				"#Cell_Alpha"
+				{
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+				}
+				
+				// scout cell
+				"#Cell_Bravo"
+				{
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+					"麦克雷"							"template_scout_insurgent"
+				}
+			}
+		}
+	}
+	"player_templates"
+	{
+		"template_specialist_security"
+		{	
+			"team"			"security"			
+			"print_name"	"麦克雷"	
+
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_model10"
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_anm14"
+			}
+		}
+		
+		"template_scout_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"麦克雷"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_light.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_molotov"
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_molotov"
+			}
+		}
+	}
+	"weapon_upgrades"
+	{
+		"sec_flashlight_pistol"
+		{
+			"IsBase"				"1"
+		}
+		"ins_flashlight_pistol"
+		{
+			"IsBase"				"1"
+		}
+		"sec_lasersight_pistol"
+		{
+			"IsBase"				"1"
+		}
+		"ins_lasersight_pistol"
+		{
+			"IsBase"				"1"
+		}
+	}
+	"weapons"
+	{
+		"weapon_m67"
+		{
+			"IsBase"				"1"
+		}
+		"weapon_f1"
+		{
+			"IsBase"				"1"
+		}
+		"weapon_m1911"
+		{
+			"weapon_cost"					"0"
+			"IsBase"				"1"
+		}
+		"weapon_m9"
+		{
+			"weapon_cost"					"0"
+			"IsBase"				"1"
+		}
+		"weapon_m45"
+		{
+			"weapon_cost"					"0"
+			"IsBase"				"1"
+		}
+		"weapon_makarov"
+		{
+			"weapon_cost"					"0"
+			"IsBase"				"1"
+		}
+		"weapon_model10"
+		{
+			"weapon_cost"					"0"
+		}
+		"weapon_anm14"
+		{
+			"weapon_cost"			"5"
+		}
+		"weapon_molotov"
+		{
+			"weapon_cost"			"5"
+		}
+	}
+	"explosives"
+	{
+		"rocket_at4"
+		{
+			"DetonateDamage"					"165"
+			"DetonateDamageRadius"				"625"
+		}
+		"rocket_rpg7"
+		{
+			"DetonateDamage"					"165"
+			"DetonateDamageRadius"				"625"
+		}
+	}
+}

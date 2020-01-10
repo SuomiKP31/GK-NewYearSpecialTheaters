@@ -197,6 +197,10 @@
 		{
 			"weapon_cost"					"0"
 		}
+		"weapon_model10"
+		{
+			"weapon_cost"					"0"
+		}
 	}
 	"explosives"
 	{

@@ -90,6 +90,7 @@
 			{
 				"weapon"			"weapon_kabar"
 				"weapon"			"weapon_m590"
+				"weapon"			"weapon_anm14"
 			}
 		}
 		
@@ -113,6 +114,7 @@
 			{
 				"weapon"			"weapon_gurkha"
 				"weapon"			"weapon_toz"
+				"weapon"			"weapon_molotov"
 			}
 		}
 	}
@@ -174,18 +176,30 @@
 		"weapon_m1911"
 		{
 			"weapon_cost"					"20"
+			"IsBase"				"1"
 		}
 		"weapon_m9"
 		{
 			"weapon_cost"					"20"
+			"IsBase"				"1"
 		}
 		"weapon_m45"
 		{
 			"weapon_cost"					"20"
+			"IsBase"				"1"
 		}
 		"weapon_makarov"
 		{
 			"weapon_cost"					"20"
+			"IsBase"				"1"
+		}
+		"weapon_anm14"
+		{
+			"weapon_cost"			"5"
+		}
+		"weapon_molotov"
+		{
+			"weapon_cost"			"5"
 		}
 	}
 }
